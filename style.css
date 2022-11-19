@@ -1,0 +1,36 @@
+:root{
+    font-size: 18px;
+}
+
+#content{
+    max-width: 1280px;
+    border-right-width: 1px;
+    box-sizing: border-box;
+}
+.sinottico{
+    width: 320px !important;
+}
+
+@media(min-width: 1696px){
+    #content{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #left-navigation{
+        margin-left: calc((100vw - 1280px)/2) !important;
+    }
+    #right-navigation{
+        margin-right: calc((100vw - 1280px)/2) !important;
+    }
+}
+
+@media(min-width: 2250px){
+    #toc{
+        display: block;
+        position: fixed;
+        left: calc((100vw - 1280px)/2 + 1280px + 1em);
+        top: 90px;
+        max-height: calc(100vh - 90px - 2em);
+        overflow: auto;
+    }
+}

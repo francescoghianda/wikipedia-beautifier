@@ -1,0 +1,13 @@
+{
+  "name": "Wikipedia Beautifier",
+  "description": "A simple Google Chrome extention to provide better visualization of Wkipedia on large screen.",
+  "author": "Francesco Ghianda",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+     {
+	"matches": ["https://*.wikipedia.org/*"],
+	"css": ["style.css"]
+     }
+  ]
+}
